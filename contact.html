@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Profile - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include jQuery via CDN for lab requirement -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">Alex Morgan | Executive Profile</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="certificates.html">Certificates</a></li>
+                <li><a href="contact.html" style="color: #c5a059;">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        <h1>Contact & Professional Inquiry</h1>
+        <p>Feel free to reach out for professional collaborations, academic project discussions, or technical consultations.</p>
+        
+        <form id="contactForm">
+            <div style="margin-bottom: 15px;">
+                <label for="name" style="display:block; font-weight:500; margin-bottom:5px;">Your Name:</label>
+                <input type="text" id="name" name="name" required style="width:100%; padding:10px; border:1px solid #ccc; border-radius:4px;">
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+                <label for="email" style="display:block; font-weight:500; margin-bottom:5px;">Email Address:</label>
+                <input type="email" id="email" name="email" required style="width:100%; padding:10px; border:1px solid #ccc; border-radius:4px;">
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+                <label for="message" style="display:block; font-weight:500; margin-bottom:5px;">Message:</label>
+                <textarea id="message" name="message" rows="4" required style="width:100%; padding:10px; border:1px solid #ccc; border-radius:4px;"></textarea>
+            </div>
+            
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <div id="responseMessage" style="margin-top: 20px; font-weight: bold; color: #1b2a4a;"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Alex Morgan. Built for Academic Excellence under VTU Guidelines.</p>
+    </footer>
+
+    <!-- Link external script -->
+    <script src="script.js"></script>
+</body>
+</html>
