@@ -1,133 +1,146 @@
-/* --- SLATE MINIMALIST THEME (style.css) --- */
+/* ==========================================
+   GLOBAL STYLES - WARM EDITORIAL THEME
+   ========================================== */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: #f1f5f9;
-    color: #1e293b;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background-color: #fbf9f5;
+    color: #2c2523;
     line-height: 1.6;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    padding-bottom: 40px;
 }
 
+/* Header & Navigation */
 header {
-    background-color: #334155;
-    color: #ffffff;
-    padding: 18px 40px;
+    background-color: #f4efe6;
+    border-bottom: 1px solid #e8e2d8;
+    padding: 15px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-header .logo {
+.logo {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: bold;
+    color: #2c2523;
     letter-spacing: 0.5px;
 }
 
-header nav ul {
+nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
 }
 
-header nav a {
-    color: #cbd5e1;
+nav a {
     text-decoration: none;
+    color: #6e6057;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
     transition: color 0.2s ease;
 }
 
-header nav a:hover {
-    color: #ffffff;
+nav a:hover {
+    color: #9a6235;
 }
 
+/* Layout Container */
 .container {
     max-width: 900px;
     margin: 40px auto;
-    background-color: #ffffff;
-    border: 1px solid #cbd5e1;
-    border-radius: 8px;
-    padding: 35px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-    flex: 1;
+    background: #ffffff;
+    padding: 40px;
+    border: 1px solid #e8e2d8;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(44, 37, 35, 0.03);
 }
 
+/* Typography */
 h1 {
-    color: #0f172a;
     font-size: 28px;
-    margin-bottom: 8px;
+    color: #1e1816;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #9a6235;
+    padding-bottom: 8px;
 }
 
 h2 {
-    color: #334155;
-    font-size: 18px;
+    font-size: 20px;
+    color: #2c2523;
     margin-top: 25px;
-    margin-bottom: 10px;
-    padding-bottom: 5px;
-    border-bottom: 2px solid #e2e8f0;
+    margin-bottom: 12px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
 }
 
 p {
-    margin-bottom: 12px;
-    color: #334155;
+    margin-bottom: 15px;
+    color: #4a403a;
 }
 
-ul.details-list {
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-ul.details-list li {
-    margin-bottom: 6px;
-}
-
+/* Buttons */
 .btn-group {
-    margin: 30px 0;
+    margin-top: 25px;
     display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
+    gap: 12px;
 }
 
 .btn {
     display: inline-block;
-    padding: 10px 22px;
-    background-color: #2563eb;
+    padding: 10px 20px;
+    background-color: #9a6235;
     color: #ffffff;
     text-decoration: none;
-    border-radius: 6px;
-    font-weight: 600;
+    border-radius: 4px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     font-size: 14px;
-    transition: background-color 0.2s ease, transform 0.1s ease;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
     border: none;
     cursor: pointer;
 }
 
 .btn:hover {
-    background-color: #1d4ed8;
+    background-color: #7c4d28;
 }
 
 .btn-secondary {
-    background-color: #475569;
+    background-color: #f4efe6;
+    color: #4a403a;
+    border: 1px solid #e8e2d8;
 }
 
 .btn-secondary:hover {
-    background-color: #334155;
+    background-color: #e8e2d8;
+    color: #1e1816;
 }
 
+/* Lists */
+.details-list {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: #4a403a;
+}
+
+.details-list li {
+    margin-bottom: 8px;
+}
+
+/* Footer */
 footer {
-    background-color: #ffffff;
-    border-top: 1px solid #e2e8f0;
     text-align: center;
     padding: 20px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
     font-size: 13px;
-    color: #64748b;
-    margin-top: auto;
+    color: #8c7e75;
+    border-top: 1px solid #e8e2d8;
+    margin-top: 40px;
 }
